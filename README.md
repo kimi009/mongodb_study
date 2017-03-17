@@ -5,4 +5,9 @@ mongod --dbpath="D:\Program Files\MongoDB\Data\db"     ====》表示数据库存
        --logappend ===》日志追加
        --directoryperdb  ===》每个db都放到单独的目录
        --install
-       --serviceName="mongodb"
+       --serviceName="mongodb"
+       
+      运行完上面的命令 就会把mongodb添加到windows services
+      > net start mongodb  启动服务
+      > net stop mongodb 停止服务
+      > sc delete mongodb 删除服务
